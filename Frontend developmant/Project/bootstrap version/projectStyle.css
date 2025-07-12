@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+/*Header styling*/
+.headerTop{
+    color: red;
+}
+
+/*Navigation*/
+.navBar{
+    background-color: grey;
+    border-radius: 15px;
+    border: 2px solid black;
+}
+
+#navImage{
+    width: 50px;
+    height: 50px;
+}
+
+.navLinks{
+    text-decoration: none;
+    color: white;
+}
+
+/*Content*/
+.contentBackground{
+    background: url(../images/image2.jpg) no-repeat center center/cover;
+    border-bottom-left-radius: 100px;
+    padding: 25px;
+    border: 2px solid black;
+}
+
+#contentHeader{
+    font-weight: bold;
+}
+
+.contentButton{
+    background-color: yellow;
+    border-radius: 20px;
+    padding: 0;
+    border-color: white;
+    font-weight: bold;
+}
+
+.contentImage{
+    width: 220px;
+    height: 150px;
+    border-radius: 20px;
+    box-shadow: 2px 7px 16px 19px black;
+}
+
+.contentButtons{
+    background-color: yellow;
+    border-radius: 20px;
+    padding: 0;
+    border-color: white;
+    font-weight: bold;
+    transform: translateY(-50px);
+}
+
+/*feature product*/
+.featureHeader{
+    color: red;
+    font-weight: bold;
+}
+
+.featureImage{
+    width: 300px;
+    height: 250px;
+    border-radius: 15px;
+}

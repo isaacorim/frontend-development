@@ -1,0 +1,130 @@
+/*Desktop*/
+/*Header styling*/
+#header{
+    display: flex;
+    background-color: purple;
+    padding: 30px;
+}
+
+/*content styling*/
+#content{
+    display: flex;
+    justify-content: space-between;
+}
+
+#contentLinks{
+    flex-direction: column;
+}
+
+.contentLinksColumn{
+    padding: 30px;
+    background-color: lightskyblue;
+    margin: 10px;
+    width: 100%;
+}
+
+#contentRight{
+    padding: 30px;
+    background-color: lightskyblue;
+    margin: 10px;
+    width: 15%;
+    height: 385px;
+}
+
+/*Footer*/
+#footer{
+    display: flex;
+    background-color: rgb(125, 125, 231);
+    padding: 30px;
+}
+
+/*Tablet*/
+@media screen and (max-width: 800px) {
+    /*Header styling*/
+    #header{
+        display: flex;
+        background-color: purple;
+        padding: 30px;
+    }
+
+    /*content styling*/
+    #content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #contentLinks{
+        flex-direction: column;
+    }
+
+    .contentLinksColumn{
+        padding: 10px;
+        background-color: lightskyblue;
+        margin: 10px;
+        width: 10%;
+        height: 2px;
+    }
+
+    #contentRight{
+        padding: 30px;
+        background-color: lightskyblue;
+        margin: 10px;
+        width: auto;
+        height: 20px;
+        margin-top: 200px;
+    }
+
+    /*Footer*/
+    #footer{
+        display: flex;
+        background-color: rgb(125, 125, 231);
+        padding: 30px;
+    }
+
+}
+
+/*Mobile*/
+@media screen and (max-width: 400px) {
+    /*Header styling*/
+    #header{
+        display: flex;
+        background-color: blue;
+        padding: 30px;
+    }
+
+    /*content styling*/
+    #content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #contentLinks{
+        flex-direction: column;
+    }
+
+    .contentLinksColumn{
+        padding: 30px;
+        background-color: lightskyblue;
+        margin: 10px;
+        width: auto;
+    }
+
+    #contentRight{
+        padding: 30px;
+        background-color: lightskyblue;
+        margin: 10px;
+        width: auto;
+        height: 20px;
+        margin-top: 200px;
+    }
+
+    /*Footer*/
+    #footer{
+        display: flex;
+        background-color: rgb(125, 125, 231);
+        padding: 30px;
+    }
+
+}

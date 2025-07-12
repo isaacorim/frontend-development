@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/*Header styling*/
+#header{
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+/*Content styling*/
+#contentHighlights{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.contentHighlightsImages{
+    border-bottom-left-radius: 75%;
+}
+
+.contentHighlightsButtons{
+    background-color: purple;
+    border-radius: 15px;
+    border-color: purple;
+    padding: 15px;
+    margin-top: 15px;
+    color: white;
+    margin: 10px;
+
+}
+
+#contentImages{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/*Footer styling*/
+#footer{
+    display: flex;
+    justify-content: space-around;
+}

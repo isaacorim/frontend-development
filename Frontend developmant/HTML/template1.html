@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index page</title>
+    <style>
+        /* --- Basic Body Styles --- */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* A clean and modern sans-serif font. */
+            background-color: #f4f7f6; /* A slightly warmer light gray. */
+            color: #333;
+            line-height: 1.6; /* Improved readability. */
+            margin: 0; /* Reset default body margin. */
+            padding: 0; /* Reset default body padding. */
+            display: flex; /* Enable flexbox for overall layout. */
+            justify-content: center; /* Center the content horizontally. */
+            min-height: 100vh; /* Ensure the body takes up at least the full viewport height. */
+        }
+
+        /* --- Main Container --- */
+        .container {
+            max-width: 960px;
+            background-color: #fff;
+            padding: 40px; /* Slightly increased padding. */
+            border-radius: 12px; /* More pronounced rounded corners. */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* A more noticeable, softer shadow. */
+            margin: 40px; /* Adjust margin for better spacing in the flex layout. */
+        }
+
+        /* --- Hero Section --- */
+        .hero {
+            text-align: center;
+            padding-bottom: 50px; /* Increased padding. */
+            border-bottom: 2px solid #e0e0e0; /* Slightly thicker, lighter border. */
+            margin-bottom: 50px; /* Increased margin. */
+            background-image: linear-gradient(135deg, #a8dadc, #457b9d); /* A subtle, cool gradient background. */
+            color: #fff; /* Light text on the gradient. */
+            padding-top: 50px; /* Added top padding for balance. */
+            border-radius: 10px; /* Rounded corners for the hero section. */
+        }
+
+        .hero-title {
+            font-size: 3em; /* Larger, more impactful title. */
+            margin-bottom: 20px;
+            font-weight: bold; /* Emphasize the title. */
+        }
+
+        .hero-button {
+            display: inline-block;
+            padding: 12px 24px; /* Slightly larger button. */
+            background-color: #1d3557; /* A darker, contrasting color. */
+            color: #f1faee; /* Light text on the dark button. */
+            text-decoration: none;
+            border-radius: 8px; /* More rounded button corners. */
+            font-size: 1em;
+            margin-top: 25px;
+            transition: background-color 0.3s ease; /* Smooth hover effect. */
+        }
+
+        .hero-button:hover {
+            background-color: #457b9d; /* Lighter shade on hover. */
+        }
+
+        /* --- About Us Section --- */
+        .about-us {
+            display: flex;
+            gap: 40px; /* Increased gap. */
+            margin-bottom: 50px; /* Increased margin. */
+            align-items: center;
+            border-bottom: 2px solid #e0e0e0; /* Slightly thicker, lighter border. */
+            padding-bottom: 50px; /* Increased padding. */
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        .about-title {
+            font-size: 2.2em; /* Slightly larger title. */
+            color: #1d3557; /* Consistent dark color. */
+            margin-bottom: 15px;
+            font-weight: bold; /* Emphasize the title. */
+        }
+
+        .about-paragraph {
+            font-size: 1em; /* Slightly larger paragraph text. */
+            line-height: 1.7; /* Improved readability. */
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .about-image {
+            flex: 1;
+            text-align: right;
+        }
+
+        .about-image img {
+            width: 100%; /* Make image responsive within its container. */
+            max-width: 350px; /* Set a maximum width. */
+            height: auto; /* Maintain aspect ratio. */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Subtle image shadow. */
+        }
+
+        /* --- Our Services Section --- */
+        .our-services {
+            text-align: center;
+            margin-bottom: 50px; /* Increased margin. */
+            border-bottom: 2px solid #e0e0e0; /* Slightly thicker, lighter border. */
+            padding-bottom: 50px; /* Increased padding. */
+        }
+
+        .services-title {
+            font-size: 2.2em; /* Slightly larger title. */
+            color: #1d3557; /* Consistent dark color. */
+            margin-bottom: 30px;
+            font-weight: bold; /* Emphasize the title. */
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Slightly wider minimum width. */
+            gap: 25px; /* Increased gap. */
+            text-align: left;
+        }
+
+        .service-item {
+            padding: 20px; /* Increased padding. */
+            border: 1px solid #d1d8e0; /* Slightly darker border. */
+            border-radius: 8px;
+            background-color: #fff; /* White background for service items. */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08); /* Subtle shadow for service items. */
+            transition: transform 0.2s ease-in-out; /* Smooth hover animation. */
+        }
+
+        .service-item:hover {
+            transform: translateY(-5px); /* Slight lift on hover. */
+        }
+
+        .service-icon {
+            font-size: 1.8em; /* Slightly larger icons. */
+            color: #457b9d; /* A key accent color. */
+            margin-bottom: 12px;
+        }
+
+        .service-name {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        .service-description {
+            font-size: 0.95em;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        /* --- Get in Touch Section --- */
+        .get-in-touch {
+            text-align: center;
+            padding-bottom: 40px; /* Increased padding. */
+        }
+
+        .touch-title {
+            font-size: 1.8em; /* Slightly larger title. */
+            color: #1d3557; /* Consistent dark color. */
+            margin-bottom: 15px;
+            font-weight: bold; /* Emphasize the title. */
+        }
+
+        .touch-paragraph {
+            font-size: 1em;
+            color: #777;
+            line-height: 1.6;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <h1 class="hero-title">Innovate. Grow. Succeed.</h1>
+            <p style="font-size: 1.2em; margin-bottom: 30px;">Your partner in achieving business excellence.</p>
+            <a href="#" class="hero-button">Explore More</a>
+        </div>
+
+        <div class="about-us">
+            <div class="about-text">
+                <h2 class="about-title">Our Story</h2>
+                <p class="about-paragraph">
+                    We believe in the power of collaboration and innovation to drive meaningful results. Our journey began with a simple idea: to provide businesses with the tools and expertise they need to thrive in a dynamic world.
+                </p>
+                <p class="about-paragraph">
+                    With a dedicated team and a passion for excellence, we've helped numerous clients transform their visions into reality. We're more than just a service provider; we're your strategic partner, committed to your long-term success.
+                </p>
+            </div>
+            <div class="about-image">
+                <img src="https://via.placeholder.com/350" alt="Our Team's Vision">
+            </div>
+        </div>
+
+        <div class="our-services">
+            <h2 class="services-title">What We Offer</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <div class="service-icon"><i class="fas fa-lightbulb"></i></div>
+                    <h3 class="service-name">Strategic Planning</h3>
+                    <p class="service-description">Crafting clear roadmaps for your business growth and success.</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon"><i class="fas fa-code"></i></div>
+                    <h3 class="service-name">Web Development</h3>
+                    <p class="service-description">Building powerful and user-friendly online experiences.</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon"><i class="fas fa-bullhorn"></i></div>
+                    <h3 class="service-name">Digital Marketing</h3>
+                    <p class="service-description">Reaching your target audience and boosting your online presence.</p>
+                </div>
+                <div class="service-item">
+                    <div class="service-icon"><i class="fas fa-chart-pie"></i></div>
+                    <h3 class="service-name">Data Analytics</h3>
+                    <p class="service-description">Turning raw data into actionable insights for informed decisions.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="get-in-touch">
+            <h2 class="touch-title">Let's Connect</h2>
+            <p class="touch-paragraph">Ready to take the next step? Contact us today to discuss your business needs and explore how we can help you achieve your goals.</p>
+            <a href="#" class="hero-button">Contact Us</a>
+        </div>
+    </div>
+</body>
+</html>

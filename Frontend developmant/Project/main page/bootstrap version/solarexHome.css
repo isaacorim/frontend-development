@@ -1,0 +1,10 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/*Header*/
+.headerText{
+    background-color: red;
+    color: white;
+}

@@ -1,0 +1,24 @@
+
+
+#image1{
+    width: 200px;
+    display: none;
+}
+
+#image2{
+    max-width: 200px;
+    display: block;
+    visibility: hidden;
+}
+
+.div1{
+    width: 1000px;
+    /* margin: auto; */
+    border: 3px solid green;
+}
+
+.div2{
+    max-width: 1000px;
+    /* margin: auto; */
+    border: 3px solid green;
+}

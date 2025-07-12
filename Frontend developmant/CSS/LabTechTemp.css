@@ -1,0 +1,112 @@
+/* Global stylng */
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: clamp(1rem, 2vw, 1.25rem);
+}
+
+/*Header*/
+#header{
+    display: flex;
+    justify-content:space-between;
+    padding: 10px;
+    /*new*/
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    font-weight: bold;
+}
+
+/*Image size*/
+.logo{
+    width: 150px;
+    height: 150px;
+}
+
+/*Header styling*/
+.address{
+    text-align: center;
+    /* font-size: 20px; */
+}
+
+#text1{
+    text-align: end;
+    line-height: 2px;
+}
+
+#text{
+    text-align: center;
+}
+
+#contact{
+    display: flex;
+}
+
+#email{
+    text-align: right;
+}
+
+#phoneNo{
+    margin-left: auto;
+}
+
+/*Table styling*/
+.table_border{
+    border: 2px solid black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#table_structure{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Footer*/
+#signature{
+    /* transform: translateX(100px); */
+    /* margin-right: auto; */
+    display: flex;
+    justify-content: end;
+}
+
+/*new*/
+@media (max-width: 768px) {
+    #header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        width: 100px;
+        height: auto;
+    }
+
+    #contact {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .address {
+        font-size: 1rem;
+    }
+
+    body {
+        font-size: 1rem;
+    }
+
+    table {
+        font-size: 0.9rem;
+        width: 100%;
+    }
+
+    .table_border {
+        font-size: 0.9rem;
+        padding: 4px;
+    }
+}

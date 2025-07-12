@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Work</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap CSS -->
+ <link href="../../bootstrap-5.3.6-dist/bootstrap-5.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Ubuntu Mono', monospace;
+      text-align: center;
+    }
+
+    .navigationLinks:hover {
+      background-color: red;
+      border-radius: 15px;
+    }
+
+    .content-section {
+      background: url('images/image2.jpg') no-repeat center center/cover;
+      border-bottom-left-radius: 100px;
+      height: 380px;
+      border: 2px solid black;
+    }
+
+    .image-shadow {
+      border-radius: 20px;
+      box-shadow: 2px 7px 16px 19px black;
+    }
+
+    .custom-btn {
+      background-color: yellow;
+      border-radius: 20px;
+      border: 1px solid white;
+    }
+
+    .custom-btn:hover {
+      background-color: red;
+    }
+
+    .footer-img {
+      width: 90%;
+      height: 300px;
+      border-radius: 15px;
+    }
+
+    .buttonPosition{
+      transform: translate(-200px, 40px);
+    }
+
+    .buttonPositionB{
+      transform: translateY(-50px);
+    }
+
+    @media (max-width: 400px) {
+      .responsive-image {
+        max-width: 75%;
+        max-height: 60%;
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-white">
+
+  <!-- Header -->
+  <div class="text-center mt-3">
+    <h1 class="text-danger fw-bold">Online</h1>
+    <h2>FoodShop</h2>
+  </div>
+
+  <hr />
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg bg-secondary rounded border border-dark p-3 d-flex flex-column">
+    <div>
+      <img src="images/image1.jpg" alt="chef picture" class="rounded-circle" style="width: 50px; height: 50px;">
+    </div>
+    <div class="container-fluid justify-content-center">    
+      <div class="d-flex gap-5">
+        <a href="#" class="text-white text-decoration-none navigationLinks">Home</a>
+        <a href="#" class="text-white text-decoration-none navigationLinks">About</a>
+        <a href="#" class="text-white text-decoration-none navigationLinks">Menu</a>
+        <a href="btContact.html" class="text-white text-decoration-none navigationLinks">ContactUs</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Content -->
+  <div class="content-section text-dark d-flex flex-column align-items-center justify-content-center mt-4">
+    <h3 class="fw-bold fs-2">Welcome to Online FoodShop</h3>
+    <button class="btn custom-btn mt-3 p-0"><b>ORDER NOW</b></button>
+
+    <div class="d-flex justify-content-center flex-wrap gap-4 mt-5">
+      <div>
+        <img src="images/image1.jpg" alt="chef" class="img-fluid image-shadow mb-2" style="width: 300px; height: 150px;" />
+        <button class="btn custom-btn buttonPosition p-0">Prices</button>
+      </div>
+
+      <div>
+        <img src="images/image3.jpg" alt="image" class="img-fluid image-shadow mb-2" style="width: 300px; height: 150px;" />
+        <button class="btn custom-btn buttonPosition p-0">Specials</button>
+      </div>
+    </div>
+  </div>
+
+  <hr />
+
+  <!-- Footer -->
+  <div class="text-danger fw-bold fs-4 mt-4">Featured Products</div>
+
+  <!-- Additional Features -->
+  <div class="container mt-3">
+    <div class="row text-center">
+      <div class="col-md-4 mb-3">
+        <img src="images/image4.jpg" class="footer-img" alt="feature1" />
+        <button class="btn custom-btn buttonPositionB p-0">Order Now</button>
+      </div>
+      <div class="col-md-4 mb-3">
+        <img src="images/image5.jpg" class="footer-img" alt="feature2" />
+        <button class="btn custom-btn buttonPositionB p-0">Order Now</button>
+      </div>
+      <div class="col-md-4 mb-3">
+        <img src="images/image6.jpg" class="footer-img" alt="feature3" />
+        <button class="btn custom-btn buttonPositionB p-0">Order Now</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="../../bootstrap-5.3.6-dist/bootstrap-5.3.6-dist/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+}
+
+#formHeading{
+    text-align: center;
+    font-size: 24px;
+}
+
+#formSelect{
+    width: 400px;
+    height: 30px;
+    padding: 7px;
+}
+
+#formEmail{
+    width: 420px;
+    height: 30px;
+    padding: 7px;
+}
+
+#formPhone{
+    width: 420px;
+    height: 30px;
+    padding: 7px;
+}
+
+#formTextArea{
+    width: 420px;
+    height: 200px;
+}

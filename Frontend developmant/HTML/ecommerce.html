@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login | E-Commerce Store</title>
+  
+  <!-- Internal CSS styling the login page -->
+  <style>
+    /* Reset default margins and paddings for all elements */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Body styles: center the login form with a gradient background */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    /* Login form container styling */
+    .login-container {
+      background-color: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    /* Heading style */
+    .login-container h2 {
+      text-align: center;
+      margin-bottom: 24px;
+      color: #333;
+    }
+
+    /* Wrapper for each form field */
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    /* Label for input fields */
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+
+    /* Input field styles */
+    .form-group input {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    /* Highlight border when input is focused */
+    .form-group input:focus {
+      border-color: #2575fc;
+      outline: none;
+    }
+
+    /* Password field wrapper for positioning eye icon */
+    .password-toggle {
+      position: relative;
+    }
+
+    /* Eye icon to toggle password visibility */
+    .password-toggle-icon {
+      position: absolute;
+      top: 38px;
+      right: 12px;
+      cursor: pointer;
+      font-size: 16px;
+      color: #999;
+    }
+
+    /* Login button styling */
+    .login-btn {
+      width: 100%;
+      background-color: #2575fc;
+      color: white;
+      padding: 12px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    /* Hover effect for login button */
+    .login-btn:hover {
+      background-color: #1b5fcc;
+    }
+
+    /* Links below the form (forgot password, sign up) */
+    .extra-links {
+      margin-top: 16px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    /* Styling the links */
+    .extra-links a {
+      color: #2575fc;
+      text-decoration: none;
+    }
+
+    /* Hover effect for links */
+    .extra-links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Login container -->
+  <div class="login-container">
+    <h2>Login to Your Account</h2>
+
+    <!-- Login form (for demonstration, no action URL specified) -->
+    <form>
+      
+      <!-- Email input -->
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="you@example.com" required />
+      </div>
+
+      <!-- Password input with visibility toggle -->
+      <div class="form-group password-toggle">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter your password" required />
+        <span class="password-toggle-icon" onclick="togglePassword()">👁️</span>
+      </div>
+
+      <!-- Submit button -->
+      <button type="submit" class="login-btn">Login</button>
+    </form>
+
+    <!-- Additional links -->
+    <div class="extra-links">
+      <p><a href="#">Forgot your password?</a></p>
+      <p>Don't have an account? <a href="#">Sign up</a></p>
+    </div>
+  </div>
+
+  <!-- JavaScript to toggle password visibility -->
+  <script>
+    function togglePassword() {
+      const passwordField = document.getElementById("password");
+      const icon = document.querySelector(".password-toggle-icon");
+
+      // Toggle between 'password' and 'text' input types
+      if (passwordField.type === "password") {
+        passwordField.type = "text";
+        icon.textContent = "🙈"; // Change icon when visible
+      } else {
+        passwordField.type = "password";
+        icon.textContent = "👁️"; // Change icon back to default
+      }
+    }
+  </script>
+
+</body>
+</html>
